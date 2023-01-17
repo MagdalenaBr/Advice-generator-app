@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	font-family: "Manrope", sans-serif;
+	background-color: hsl(218, 23%, 16%);
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	position: relative;
+	width: 54rem;
+	min-height: 33rem;
+	margin: 3rem;
+	padding: 0 4rem;
+	background-color: hsl(217, 19%, 24%);
+	border-radius: 25px;
+}
+.title {
+	margin-top: 5rem;
+	color: hsl(150, 100%, 66%);
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+}
+.advice {
+	margin: 1rem;
+	font-size: 2.5rem;
+	font-weight: 800;
+	color: hsl(193, 38%, 86%);
+}
+.divider {
+	width: 100%;
+	height: 1.8rem;
+	margin: 1rem 0 7rem 0;
+	background: url("./images/pattern-divider-desktop.svg") center no-repeat;
+}
+.dice {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	height: 7rem;
+	width: 7rem;
+	transform: translate(-50%, -50%);
+	border: none;
+	border-radius: 50%;
+	background-color: hsl(150, 100%, 66%);
+	cursor: pointer;
+	transition: 0.5s;
+}
+.dice:hover {
+	box-shadow: 0 0 3rem hsl(150, 100%, 66%);
+}
+.attribution {
+	margin-top: 5rem;
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 576px) {
+	.container {
+		width: 35rem;
+		min-height: 35rem;
+		padding: 0 2rem;
+		background-color: hsl(217, 19%, 24%);
+		border-radius: 25px;
+	}
+}
